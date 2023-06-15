@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def number_keys(a_dictionary):
 
     Ret_num = 0
@@ -9,5 +10,6 @@ def number_keys(a_dictionary):
     for a in list_keys:
 
         Ret_num += 1
+
 
     return (Ret_num)
