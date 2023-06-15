@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <Python.h>
+#include <python.h>
 
 /**
  * print_python_list_info - prints python list info
@@ -8,7 +7,8 @@
  * Return: no return
  */
 
-void print_python_list_info(PyObject *p) {
+void print_python_list_info(PyObject *p)
+{
 	Py_ssize_t size;
 	PyObject *item;
 	Py_ssize_t x;
