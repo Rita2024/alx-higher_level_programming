@@ -1,23 +1,34 @@
 #!/usr/bin/python3
-
-# -*- coding: utf-8 -*-
-"""Example Google style docstrings.
-
-This module demonstrates documentation as specified by the `Google Python
-Style Guide`_. Docstrings may extend over multiple lines. Sections are created
-with a section header and a colon followed by a block of indented text.
-
-Example:
-    Examples can be given using either the ``Example`` or ``Examples``
-    sections. Sections support any reStructuredText formatting, including
-    literal blocks::
-"""
-
+"""Empty class Square that defines a square"""
 
 class Square:
-    """Class Square that defines a square.
-
-    This defines an empty square class.
-    As instructed, no method or attribute is created
     """
-    pass
+    This class represents a square.
+    """
+
+    def __init__(self, side_length):
+        """
+        Initializes a new instance of the Square class.
+
+        Args:
+            side_length (float): The length of the square's sides.
+        """
+        self.side_length = side_length
+
+    def calculate_area(self):
+        """
+        Calculates the area of the square.
+
+        Returns:
+            float: The area of the square.
+        """
+        return self.side_length ** 2
+
+    def calculate_perimeter(self):
+        """
+        Calculates the perimeter of the square.
+
+        Returns:
+            float: The perimeter of the square.
+        """
+        return 4 * self.side_length
